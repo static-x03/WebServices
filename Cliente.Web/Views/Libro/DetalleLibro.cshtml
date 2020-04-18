@@ -1,0 +1,49 @@
+﻿@model Libro
+@{
+    ViewBag.Title = "DetalleLibro";
+}
+
+<h2>Detalle del Libro</h2>
+
+<hr />
+
+
+<div class="form-group">
+    <label>IdLibro: </label>
+    @Model.IdLibro
+</div>
+<div class="form-group">
+    <label>Titulo: </label>
+    @Model.Titulo
+</div>
+<div class="form-group">
+    <label>Sinopsis: </label>
+    @Model.Sinopsis
+</div>
+<div class="form-group">
+    <label>Autor: </label>
+    @Model.Autor
+</div>
+<div class="form-group">
+    <label>Editorial: </label>
+    @Model.Editorial
+</div>
+<div class="form-group">
+    <label>Idioma: </label>
+    @Model.Idioma
+</div>
+<div class="form-group">
+    <label>Formato: </label>
+    @Model.Formato
+</div>
+<div class="form-group">
+    <label>Genero: </label>
+    @Model.Genero
+</div>
+<div class="form-group">
+    <label>Disponible: </label>
+    @Model.Disponible
+</div>
+<div class="form-group">
+    <a href="@Url.Action("Index","Libro")">Regresar</a>
+</div>
